@@ -8,7 +8,7 @@ body {
 /*## ESTILOS DE LALO INICIO##*/
 
 .booking {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/cat_producto1.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/index.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -18,9 +18,28 @@ background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chr
 background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/*
+.pbRecarga{
+  padding-bottom: 17rem!important;
+}
 
-.burbuja{
+.mt-8{
+  margin-top: 8rem;
+}
+
+.mt-7{
+  margin-top: 7rem;
+}
+
+.border-radius{
+  border-radius: 2rem;
+}
+
+.h-90{
+  height: 90%;
+}
+
+
+/*.burbuja{
   border-radius: 50%;
   background: red;
   opacity: .3;
@@ -109,7 +128,7 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
   left: 35%;
   animation-duration: 3s;
   animation-delay: 4s;
-}
+} 
 
 
 @keyframes burbujas{
@@ -127,8 +146,8 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
       bottom: 100vh;
       opacity: 0;
   }
-}
-*/
+}*/
+
 
 
 /*## ESTILOS DE LALO FIN##*/

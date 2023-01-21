@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>EduWell - Education HTML5 Template</title>
 
@@ -34,50 +39,37 @@ https://templatemo.com/tm-573-eduwell
 
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky background-header">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img src="{{asset('images/templatemo-eduwell.png')}}" alt="EduWell Template">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          <li ><a href="/">Inicio</a></li>
-                          <li ><a href="{!! URL::to('recarga')!!}" class="active">Recarga</a></li>
-                          <li ><a href="{!! URL::to('planes')!!}">Planes</a></li>
-                          <!-- <li class="scroll-to-section"><a href="#courses">Courses</a></li> -->
-                          <!-- <li class="has-sub">
-                              <a href="javascript:void(0)">Pages</a>
-                              <ul class="sub-menu">
-                                  <li><a href="about-us.html">About Us</a></li>
-                                  <li><a href="our-services.html">Our Services</a></li>
-                                  <li><a href="contact-us.html">Contact Us</a></li>
-                              </ul>
-                          </li> -->
-                          <!-- <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li> 
-                          <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li>  -->
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
+  <header class="header-area header-sticky {{(request () -> is ('recarga') || request () -> is ('pago')) ? 'background-header': ''}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="{{asset('images/templatemo-eduwell.png')}}" alt="EduWell Template">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li ><a href="/" class="{{(request () -> is ('/')) ? 'active': ''}}">Inicio</a></li>
+                        <li ><a href="{!! URL::to('recarga')!!}" class="{{(request () -> is ('recarga*')) ? 'active': ''}}">Recarga</a></li>
+                        <li ><a href="{!! URL::to('planes')!!}" class="{{(request () -> is ('planes')) ? 'active': ''}}">Planes</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
   <!-- ***** Header Area End ***** -->
 
   @yield('content')
 
-  
-<!-- 
-  <section class="contact-us" id="contact-section">
-    <div class="container ">
+  <footer class="contact-us our-office">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <ul class="social-icons">
@@ -88,18 +80,19 @@ https://templatemo.com/tm-573-eduwell
             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
           </ul>
         </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved. 
-          
-          <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-          <br>Distribution: <a rel="sponsored" href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
-        </div>
+        <!-- <div class="col-lg-12">
+          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
+  
+          <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+        </div> -->
       </div>
     </div>
-  </section> -->
-
+  </footer>
+  
   <!-- Scripts -->
+
   <!-- Bootstrap core JavaScript -->
+
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
@@ -110,6 +103,7 @@ https://templatemo.com/tm-573-eduwell
     <script src="{{asset('js/video.js')}}"></script>
     <script src="{{asset('js/slick-slider.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
+
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');

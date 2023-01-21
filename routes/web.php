@@ -20,9 +20,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function(){
     return View::make('pages.content_index');
 });
+
 Route::get('/recarga', function(){
     return View::make('pages.recharge');
 });
+
+Route::get('/pago', function(){
+    return View::make('pages.commerce');
+})->name('pago');
+
 Route::get('/planes', function(){
     return View::make('pages.planes');
 });
