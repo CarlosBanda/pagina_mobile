@@ -41,7 +41,7 @@ https://templatemo.com/tm-573-eduwell
 
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky {{(request () -> is ('recarga') || request () -> is ('pago')) ? 'background-header': ''}}">
+  <header class="header-area header-sticky {{(request () -> is ('recargas') || request () -> is ('pago')) ? 'background-header': ''}}">
     <div class="container">
         <div class="row">
             <div class="col-12">

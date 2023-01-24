@@ -5,7 +5,6 @@
     <div class="row">
       <div class="col-lg-6 offset-lg-3">
         <div class="section-heading">
-          
           <h2>Tu número {{$numeroTelefono}}</h2>
           <h4>Completa tu pago de {{$montoRecarga}} <br><em>Elige donde quieres recargar:</em></h4>
         </div>
