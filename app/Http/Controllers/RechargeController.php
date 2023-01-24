@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+// use Illuminate\Support\Facades\Request;
+
 
 class RechargeController extends Controller
 {
+
     public function recharge(Request $request){
 
         $numeroTelefono = $request->post('numeroTelefono');
@@ -28,4 +32,6 @@ class RechargeController extends Controller
         // return $data;
         return view('pages.commerce', $data);
     }
+
+   
 }
