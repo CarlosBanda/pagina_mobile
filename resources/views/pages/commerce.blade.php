@@ -15,32 +15,34 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="menu">
-                  <div class="active">
+                  <div class="active referenceSpot">
                     <img src="{{asset('images/oxxo.png')}}" alt="Oxxo">
                     <h4>OXXO</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
-                  <div>
+                  <div class="referenceSpot">
                     <img src="{{asset('images/walmart.png')}}" alt="walmart">
                     <h4>WALMART</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
-                  <div>
+                  <div class="referenceSpot">
                     <img src="{{asset('images/sams-club.jpg')}}" alt="sams-club">
                     <h4>SAM'S CLUB</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
-                  <div>
+                  <div class="referenceSpot">
                     <img src="{{asset('images/farmacia-ahorro.png')}}" alt="Farmacia del Ahorro">
                     <h4>FARMACIA DEL AHORRO</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
-                  <div>
+                  <div class="referenceSpot">
                     <img src="{{asset('images/tarjeta-debito.jpg')}}" alt="">
                     <h4>TAJETA DE CRÉDITO O DÉBITO</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
                 </div>
+                <input type="hidden" name="" id="amount" value="30">
+                <input type="hidden" name="" id="description" value="Recarga 30 Dias">
               </div>
             </div>
           </div>
@@ -49,4 +51,19 @@
     </div>
   </div>
 </section>
+<script>
+  $('.referenceSpot').click(function(){
+    let amount = $('#amount').val()
+    let description = $('#description').val()
+
+    $.ajax({
+      url: "{{route('references')}}",
+      type: 'GET',
+      data: {amount, description},
+      success: function(response){
+        console.log(response)
+      }
+    })
+  })
+</script>
 @endsection
