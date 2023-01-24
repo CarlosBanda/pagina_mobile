@@ -32,3 +32,5 @@ Route::get('/pago', function(){
 Route::get('/planes', function(){
     return View::make('pages.planes');
 });
+
+Route::get('references', 'RechargeController@reference')->name('references');
