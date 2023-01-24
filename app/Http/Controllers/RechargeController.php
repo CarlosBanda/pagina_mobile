@@ -1,30 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-use Openpay\Data\Openpay as Openpay;
-use Illuminate\Http\Request;
 
-require_once '../vendor/autoload.php';
+use Illuminate\Http\Request;
 
 class RechargeController extends Controller
 {
-    //
-    public function reference(Request $request){
+    public function recharge(Request $request){
 
-        $amount = $request('amount');
-        $description = $requets('description');
-        // return $request;
-        $openpay = Openpay::getInstance('mvtmnoafnxul8oizkhju', 'sk_e69bbf5dle30448688b24670bcef1743');
+        $numeroTelefono = $request->post('numeroTelefono');
+        $numeroTelefono = preg_replace( '/\((\w+)\)/i', "$1", $numeroTelefono);
+        $numeroTelefono = str_replace( '-', ' ', $numeroTelefono);
+        $numeroTelefono = preg_replace( '/\s+/i', '', $numeroTelefono);
 
-        Openpay::setProductionMode(false);
 
-        $chergeData = array(
-            'method' => 'store',
-            'amount' => 100,
-            'description' => $description
-        );
+        $data['numeroTelefono'] = $numeroTelefono;
+        $data['tipoServicio'] = $request->post('tipoServicioInput');
+        $data['montoRecarga'] = $request->post('montoRecargaInput');
 
-        $charge = $openpay->charges->create($chergeData);
-        return $charge;
+
+        // $data = [
+        //     'numeroSinEspacio' => $numeroSinEspacio,
+        //     'tipoServicio' => $tipoServicio,
+        //     'montoRecarga' => $montoRecarga
+        // ];
+
+        // return $data;
+        return view('pages.commerce', $data);
     }
 }
