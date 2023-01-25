@@ -6,8 +6,8 @@
         <div class="row gx-5">
             <div class="col-lg-6 pt-5 "><!--py-5-->
                 <div class="py-5 mt-7">
-                    <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                    <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <h1 class="text-white mb-4 text-center">Recarga de forma segura y facíl.</h1>
+                    {{-- <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p> --}}
                 </div>
             </div>
             <div class="col-lg-6">

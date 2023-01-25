@@ -113,13 +113,13 @@
                   <h5>30 días</h5>
                 </div>
                 <div class="price">
-                  <p>$0<span>/month</span></p>
+                  <p>$0<span>/Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
@@ -129,16 +129,16 @@
             <div class="item">
               <div class="pricing-table featured text-center">
                 <div class="title">
-                  <h5>Basic</h5>
+                  <h5>Basico</h5>
                 </div>
                 <div class="price">
-                  <p>$19<span>/month</span></p>
+                  <p>$19<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
@@ -148,16 +148,16 @@
             <div class="item">
               <div class="pricing-table text-center">
                 <div class="title">
-                  <h5>Advance</h5>
+                  <h5>Avanzado</h5>
                 </div>
                 <div class="price">
-                  <p>$99<span>/month</span></p>
+                  <p>$99<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
@@ -171,13 +171,13 @@
                   <h5>30 días</h5>
                 </div>
                 <div class="price">
-                  <p>$0<span>/month</span></p>
+                  <p>$0<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
@@ -187,16 +187,16 @@
             <div class="item">
               <div class="pricing-table featured text-center">
                 <div class="title">
-                  <h5>Basic</h5>
+                  <h5>Basico</h5>
                 </div>
                 <div class="price">
-                  <p>$19<span>/month</span></p>
+                  <p>$19<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
@@ -206,16 +206,16 @@
             <div class="item">
               <div class="pricing-table text-center">
                 <div class="title">
-                  <h5>Advance</h5>
+                  <h5>Avanzado</h5>
                 </div>
                 <div class="price">
-                  <p>$99<span>/month</span></p>
+                  <p>$99<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Android App</li>
-                  <li>One time payment</li>
+                  <li>Aplicación Android</li>
+                  <li>Pago línea</li>
                   <li>Build & Publish</li>
-                  <li>Life time support</li>
+                  <li>Soporte de por vidat</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>

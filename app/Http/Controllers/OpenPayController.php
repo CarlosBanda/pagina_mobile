@@ -17,6 +17,7 @@ require_once '../vendor/autoload.php';
 class OpenPayController extends Controller
 {
     public function references(Request $request){
+        #Cambiar llaves#
         $openpay = Openpay::getInstance('mx6hwd1zsacnw4mqbpca', 'sk_ebc33028470b462388e2382137c13312');
         Openpay::setProductionMode(true);
 
