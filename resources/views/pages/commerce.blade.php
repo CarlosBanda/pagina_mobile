@@ -62,24 +62,86 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title p-2" id="exampleModalLabel">Tu número: {{$numeroTelefono}}</h5>
-          {{-- <div class="p-4">
-            <div>
-              <p>1. Visita una de las tiendas afiliadas</p>
-              <p>2. Indica en caja que quieres realizar un pago de: OxxoPay</p>
-              <p>3. Muestra la referencia de pago o el código de barras para pagar en caja.</p>
-              <p>4. Confirma el monto a pagar.</p>
-              <p>5. Completa tu pago y recibe tu recarga inmediatamente.</p>
-              <p>6. El cajer@ te entregará un comprobante impreso. Consérvalo en caso qué requieras ayuda.</p>
-              <p>7. Recibirás un SMS confirmando tu recarga.</p>
-            </div>
-          </div> --}}
           <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <h5 class="text-center">Total a pagar</h5>
-          <h5 class="text-center p-4">Total a pagar: $300.00</h5>
+        <div class="modal-header p-4">
+          <div class="modal-body col-7 text-center">
+            <h5 class="text-star">Total a pagar</h5>
+            <h5 class="text-star p-1 pt-2 fw-bold">$300.00</h5>
+            <hr>
+            <h5 class="text-star p-1 pt-2">Número de Referencia</h5>
+            <h5 class="text-star fw-bold" id="referencePago"></h5>
+            <hr>
+            <h5 class="text-star p-1 pt-2">Código de Barra</h5>
+            <img src="" alt="" id="codeBarraPago">
+          </div>
+          <div class="modal-body border-start">
+            <div class="row padding-05 vertical-align">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-shop colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">1. Visita una de las tiendas afiliadas.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-cash-register colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">2. Indica en caja que quieres realizar un pago de: OxxoPay.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-barcode colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">3. Muestra la referencia de pago o el código de barras para pagar en caja.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-hand-holding-dollar colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">4. Confirma el monto a pagar.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-check-double colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">5. Completa tu pago y recibe tu recarga inmediatamente.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-file-invoice colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">6. El cajer@ te entregará un comprobante impreso. Consérvalo en caso qué requieras ayuda.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <i class="fa-solid fa-comment-sms colorFont padR"></i>
+              </div>
+              <div class="col-sm-11 padding-left-0">
+                <p class="text-justify h6">7. Recibirás un SMS confirmando tu recarga.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
+          <span>Tomar captura por cualquier </span>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary">Pagar</button>
         </div>
@@ -87,7 +149,7 @@
     </div>
   </div>
 </section>
-{{-- <script>
+<script>
   $('.referenceSpot').click(function(){
     let amount = $('#amount').val()
     let description = $('#description').val()
@@ -97,9 +159,15 @@
       type: 'GET',
       data: {amount, description},
       success: function(response){
-        console.log(response)
+        // console.log("PAYMENT_THOD: ",response.payment_method)
+        var reference = response.payment_method.reference;
+        var codeBarra = response.payment_method.barcode_url;
+
+        //document.getElementById("referencePago").innerHTML = reference;
+        $("#referencePago").html(reference);
+        $("#codeBarraPago").attr("src", codeBarra);
       }
     })
   })
-</script> --}}
+</script>
 @endsection
