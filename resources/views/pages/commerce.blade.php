@@ -80,7 +80,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-shop colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">1. Visita una de las tiendas afiliadas.</p>
               </div>
             </div>
@@ -89,7 +89,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-cash-register colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">2. Indica en caja que quieres realizar un pago de: OxxoPay.</p>
               </div>
             </div>
@@ -98,7 +98,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-barcode colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">3. Muestra la referencia de pago o el código de barras para pagar en caja.</p>
               </div>
             </div>
@@ -107,7 +107,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-hand-holding-dollar colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">4. Confirma el monto a pagar.</p>
               </div>
             </div>
@@ -116,7 +116,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-check-double colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">5. Completa tu pago y recibe tu recarga inmediatamente.</p>
               </div>
             </div>
@@ -125,7 +125,7 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-file-invoice colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">6. El cajer@ te entregará un comprobante impreso. Consérvalo en caso qué requieras ayuda.</p>
               </div>
             </div>
@@ -134,15 +134,20 @@
               <div class="col-sm-1">
                 <i class="fa-solid fa-comment-sms colorFont padR"></i>
               </div>
-              <div class="col-sm-11 padding-left-0">
+              <div class="col-sm-11 pl-0">
                 <p class="text-justify h6">7. Recibirás un SMS confirmando tu recarga.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-11 pl-0">
+                <p class="text-center fw-bold fs-5 mt-3">Tomar captura por cualquier duda o aclaración </p>
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <span>Tomar captura por cualquier </span>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary">Pagar</button>
         </div>
       </div>
