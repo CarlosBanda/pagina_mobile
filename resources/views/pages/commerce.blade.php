@@ -64,8 +64,8 @@
           <h5 class="modal-title p-2" id="exampleModalLabel">Tu número: {{$numeroTelefono}}</h5>
           <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-header p-4">
-          <div class="modal-body col-7 text-center">
+        <div class="modal-header p-4 formulario_pagar">
+          <div class="modal-body col-8 text-center">
             <h5 class="text-star">Total a pagar</h5>
             <h5 class="text-star p-1 pt-2 fw-bold">$300.00</h5>
             <hr>
@@ -76,7 +76,7 @@
             <img src="" alt="" id="codeBarraPago">
           </div>
           <div class="modal-body border-start">
-            <div class="row padding-05 vertical-align">
+            <div class="row">
               <div class="col-sm-1">
                 <i class="fa-solid fa-shop colorFont padR"></i>
               </div>
@@ -151,8 +151,9 @@
 </section>
 <script>
   $('.referenceSpot').click(function(){
-    let amount = $('#amount').val()
-    let description = $('#description').val()
+    
+    let amount = $('#amount').val();
+    let description = $('#description').val();
 
     $.ajax({
       url: "{{route('references')}}",
@@ -163,9 +164,28 @@
         var reference = response.payment_method.reference;
         var codeBarra = response.payment_method.barcode_url;
 
-        //document.getElementById("referencePago").innerHTML = reference;
-        $("#referencePago").html(reference);
-        $("#codeBarraPago").attr("src", codeBarra);
+          let timerInterval
+          Swal.fire({
+            title: 'Espere un momento',
+            html: 'Se está generando su Referencia de pago',
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: () => {
+              Swal.showLoading()
+              const b = Swal.getHtmlContainer().querySelector('b')
+              timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+              }, 100)
+            },
+            willClose: () => {
+              clearInterval(timerInterval)
+            }
+          }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+              $("#referencePago").html(reference);
+              $("#codeBarraPago").attr("src", codeBarra);
+            }
+          })
       }
     })
   })

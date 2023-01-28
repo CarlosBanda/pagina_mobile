@@ -46,6 +46,12 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
   padding-right: 0.5rem;
 }
 
+@media (max-width: 767px){
+  .formulario_pagar{
+    flex-direction: column;
+  }
+}
+
 
 /*## ESTILOS DE LALO FIN##*/
 

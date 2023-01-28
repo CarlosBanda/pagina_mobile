@@ -41,7 +41,7 @@ https://templatemo.com/tm-573-eduwell
 
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky {{(request () -> is ('recargas') || request () -> is ('pago')) ? 'background-header': ''}}">
+  <nav class="header-area header-sticky {{(request () -> is ('recargas') || request () -> is ('pago')) ? 'background-header': ''}}">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -65,7 +65,7 @@ https://templatemo.com/tm-573-eduwell
             </div>
         </div>
     </div>
-</header>
+  </nav>
   <!-- ***** Header Area End ***** -->
 
   @yield('content')
