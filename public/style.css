@@ -46,6 +46,11 @@ background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/
   padding-right: 0.5rem;
 }
 
+.resticciones{
+  font-weight: bold;
+  font-size: 0.6rem!important;
+}
+
 @media (max-width: 767px){
   .formulario_pagar{
     flex-direction: column;

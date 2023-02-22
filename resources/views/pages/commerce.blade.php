@@ -15,7 +15,8 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="menu">
-                  <div class="active referenceSpot" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  {{--  <div class="active referenceSpot" data-bs-toggle="modal" data-bs-target="#exampleModal">  --}}
+                  <div class="active referenceSpot">
                     <img src="{{asset('images/oxxo.png')}}" alt="Oxxo">
                     <h4>OXXO</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
@@ -27,7 +28,7 @@
                   </div>
                   <div class="referenceSpot">
                     <img src="{{asset('images/sams-club.jpg')}}" alt="sams-club">
-                    <h4>SAM'S CLUB</h4>
+                    <h4>SAMS CLUB</h4>
                     <!-- <span>CEO-FOUNDER</span> -->
                   </div>
                   <div class="referenceSpot">
@@ -148,12 +149,13 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Pagar</button>
+          {{--  <button type="button" class="btn btn-primary">Pagar</button>  --}}
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <script>
   $('.referenceSpot').click(function(){
     
@@ -189,10 +191,12 @@
             if (result.dismiss === Swal.DismissReason.timer) {
               $("#referencePago").html(reference);
               $("#codeBarraPago").attr("src", codeBarra);
+              $('#exampleModal').modal('show');
             }
           })
       }
     })
   })
 </script>
+
 @endsection

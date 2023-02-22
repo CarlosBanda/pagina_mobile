@@ -110,81 +110,84 @@
             <div class="item">
               <div class="pricing-table text-center feature_item">
                 <div class="title">
-                  <h5>30 días</h5>
-                </div>
-                <div class="price">
-                  <p>$0<span>/Mes</span></p>
-                </div>
-                <ul class="feature-list">
-                  <li>Aplicación Android</li>
-                  <li>Pago línea</li>
-                  <li>Build & Publish</li>
-                  <li>Soporte de por vidat</li>
-                </ul>
-                <div class="action-button">
-                  <a href="" class="btn btn-main-rounded">Start Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="pricing-table featured text-center">
-                <div class="title">
                   <h5>Basico</h5>
                 </div>
                 <div class="price">
-                  <p>$19<span>/ Mes</span></p>
+                  <p>$280<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Aplicación Android</li>
-                  <li>Pago línea</li>
-                  <li>Build & Publish</li>
-                  <li>Soporte de por vidat</li>
+                  <li>1 Mb Subida</li>
+                  <li>5 Mb Bajada</li>
+                  <li>Instalación GRATIS</li>
+                  <li class="resticciones">* aplican restricciones</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
                 </div>
               </div>
             </div>
+
             <div class="item">
-              <div class="pricing-table text-center">
+              <div class="pricing-table featured text-center">
                 <div class="title">
-                  <h5>Avanzado</h5>
+                  <h5>Ideal</h5>
                 </div>
                 <div class="price">
-                  <p>$99<span>/ Mes</span></p>
+                  <p>$320<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Aplicación Android</li>
-                  <li>Pago línea</li>
-                  <li>Build & Publish</li>
-                  <li>Soporte de por vidat</li>
+                  <li>A2 Mb Subida</li>
+                  <li>10 Mb Bajada</li>
+                  <li>Instalación GRATIS</li>
+                  <li class="resticciones">* aplican restricciones</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
                 </div>
               </div>
             </div>
+            
+            {{--  <div class="item">
+              <div class="pricing-table text-center">
+                <div class="title">
+                  <h5>Ideal</h5>
+                </div>
+                <div class="price">
+                  <p>$320<span>/ Mes</span></p>
+                </div>
+                <ul class="feature-list">
+                  <li>A2 Mb Subida</li>
+                  <li>10 Mb Bajada</li>
+                  <li>Instalación GRATIS</li>
+                  <li class="resticciones">* aplican restricciones</li>
+                </ul>
+                <div class="action-button">
+                  <a href="" class="btn btn-main-rounded">Start Now</a>
+                </div>
+              </div>
+            </div>  --}}
 
             <div class="item">
               <div class="pricing-table text-center feature_item">
                 <div class="title">
-                  <h5>30 días</h5>
+                  <h5>Plus</h5>
                 </div>
                 <div class="price">
-                  <p>$0<span>/ Mes</span></p>
+                  <p>$360<span>/ Mes</span></p>
                 </div>
                 <ul class="feature-list">
-                  <li>Aplicación Android</li>
-                  <li>Pago línea</li>
-                  <li>Build & Publish</li>
-                  <li>Soporte de por vidat</li>
+                  <li>5 Mb Subida</li>
+                  <li>15 Mb Bajada</li>
+                  <li>Instalación GRATIS</li>
+                  <li class="resticciones">* aplican restricciones</li>
                 </ul>
                 <div class="action-button">
                   <a href="" class="btn btn-main-rounded">Start Now</a>
                 </div>
               </div>
             </div>
-            <div class="item">
+
+            {{--  <div class="item">
               <div class="pricing-table featured text-center">
                 <div class="title">
                   <h5>Basico</h5>
@@ -203,6 +206,7 @@
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="pricing-table text-center">
                 <div class="title">
@@ -221,9 +225,9 @@
                   <a href="" class="btn btn-main-rounded">Start Now</a>
                 </div>
               </div>
-            </div>
+            </div>  --}}
 
-            <!-- <div class="item">
+            {{--  <div class="item">
               <div class="pricing-table text-center feature_item">
                 <div class="title">
                   <h5>30 días</h5>
@@ -260,7 +264,8 @@
                   <a href="" class="btn btn-main-rounded">Start Now</a>
                 </div>
               </div>
-            </div> -->
+            </div>   --}}
+
           </div>
         </div>
       </div>
